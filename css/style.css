@@ -143,6 +143,7 @@ html, body {
 body {
   font-family: "Manrope", sans-serif;
   background-color: var(--background-color);
+  transition: all .3s ease-in;
 }
 
 .wrapper {
