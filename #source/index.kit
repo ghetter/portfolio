@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <title>shinel33t. front-end web developer.</title>
-        <!-- Стили и Font-Awesome-->
-        <link rel="stylesheet" href="css/style.css">
+        <!-- Стили, значок и Font-Awesome-->
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="shortcut icon" href="favicon.ico"/>
+        <script src="https://kit.fontawesome.com/30a37a137c.js" crossorigin="anonymous"></script>        
         <!-- Кодировка и адаптив страницы -->
         <meta charset="UTF-8">
         <meta name='viewport' content='width=device-width,initial-scale=1'/>
-        <script src="https://kit.fontawesome.com/30a37a137c.js" crossorigin="anonymous"></script>
-
     </head>
     <body>
         <div class="wrapper">
@@ -36,7 +36,7 @@
                         <div class="welcome__content">
                             <h1 class="welcome__text-editable" contenteditable>front-end.web(developer)</h1>
                         </div>
-                        <div class="welcome__mode">
+                        <div id="mode" class="welcome__mode">
                             dark mode. 
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                                <ul class="s-main__list">
                                     <li class="s-main__column">
                                         <div class="s-main__icon">
-                                            <img src="images/icons/ui.svg" alt="">
+                                            <img src="images/icons/ui.svg" alt="ui/ux skills">
                                         </div>
                                         <div class="s-main__info">
                                             <div class="s-main__heading">Interface & Design</div>
@@ -72,7 +72,7 @@
                                     </li>
                                     <li class="s-main__column">
                                         <div class="s-main__icon">
-                                            <img src="images/icons/html.svg" alt="">
+                                            <img src="images/icons/html.svg" alt="html skills">
                                         </div>
                                         <div class="s-main__info">
                                             <div class="s-main__heading">HTML & CSS</div>
@@ -81,7 +81,7 @@
                                     </li>
                                     <li class="s-main__column">
                                         <div class="s-main__icon">
-                                            <img src="images/icons/js.svg" alt="">
+                                            <img src="images/icons/js.svg" alt="js skills">
                                         </div>
                                         <div class="s-main__info">
                                             <div class="s-main__heading">JavaScript</div>
@@ -93,34 +93,40 @@
                             <div class="skills__advanced s-advanced">
                                 <div class="s-advanced__row">
                                     <div class="s-advanced__column">
-                                        <div class="s-advanced__heading">I already had experience with</div>
-                                        <ul class="s-advanced__list">
-                                            <li class="s-advanced__check"><span>GIT, GitHub</span></li>
-                                            <li class="s-advanced__check"><span>Figma, Adobe XD, Zeplin</span></li>
-                                            <li class="s-advanced__check"><span>CSS Preprocessors</span></li>
-                                            <li class="s-advanced__check"><span>Coding Python</span></li>
-                                            <li class="s-advanced__check"><span>Coding MatLab</span></li>
-                                        </ul>
+                                        <div class="s-advanced__container">
+                                            <div class="s-advanced__heading">I already had experience with</div>
+                                            <ul class="s-advanced__list">
+                                                <li class="s-advanced__check"><span>GIT, GitHub</span></li>
+                                                <li class="s-advanced__check"><span>Figma, Adobe XD, Zeplin</span></li>
+                                                <li class="s-advanced__check"><span>CSS Preprocessors</span></li>
+                                                <li class="s-advanced__check"><span>Coding Python</span></li>
+                                                <li class="s-advanced__check"><span>Coding MatLab</span></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <div class="s-advanced__column">
-                                        <div class="s-advanced__heading">I have years of experience with</div>
-                                        <ul class="s-advanced__list">
-                                            <li class="s-advanced__check"><span>Coding HTML5</span></li>
-                                            <li class="s-advanced__check"><span>Coding CSS3</span></li>
-                                            <li class="s-advanced__check"><span>Coding JavaScript</span></li>
-                                            <li class="s-advanced__check"><span>Using Prepros</span></li>
-                                            <li class="s-advanced__check"><span>Creating User Interface</span></li>
-                                        </ul>
+                                        <div class="s-advanced__container">
+                                            <div class="s-advanced__heading">I have years of experience with</div>
+                                            <ul class="s-advanced__list">
+                                                <li class="s-advanced__check"><span>Coding HTML5</span></li>
+                                                <li class="s-advanced__check"><span>Coding CSS3</span></li>
+                                                <li class="s-advanced__check"><span>Coding JavaScript</span></li>
+                                                <li class="s-advanced__check"><span>Using Prepros</span></li>
+                                                <li class="s-advanced__check"><span>Creating User Interface</span></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <div class="s-advanced__column">
-                                        <div class="s-advanced__heading">I work and study about</div>
-                                        <ul class="s-advanced__list">
+                                        <div class="s-advanced__container">
+                                            <div class="s-advanced__heading">I work and study about</div>
+                                            <ul class="s-advanced__list">
                                             <li class="s-advanced__check"><span>Coding HTML5</span></li>
                                             <li class="s-advanced__check"><span>Coding CSS3</span></li>
                                             <li class="s-advanced__check"><span>Coding JavaScript</span></li>
                                             <li class="s-advanced__check"><span>Studying MySQL Database</span></li>
                                             <li class="s-advanced__check"><span>Studying User Experience</span></li>
-                                        </ul>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -225,7 +231,7 @@
                                     <li class="socials__item"><a href="#"><i class="fa-brands fa-square-github"></i></a></li>
                                 </ul>
                             </div>
-                            <a target="_blank" href="mailto:shinelwasherexo@gmail.com" contact__email">contact email</a>
+                            <a target="_blank" href="mailto:shinelwasherexo@gmail.com" class="contact__email">contact email</a>
                         </div>
                     </div>
                 </section>
@@ -244,5 +250,6 @@
                 </div>
             </footer>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
